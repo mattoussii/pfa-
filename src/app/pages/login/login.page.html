@@ -1,0 +1,52 @@
+<ion-content>
+  <div class="flex-center">
+    <form [formGroup]="form">
+    
+    <ion-card>
+    <ion-card-header>
+      
+      <ion-card-title color="success" align="center">bienvenue</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">E-mail :</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
+      </ion-item>
+
+
+ <!--component ----------------->
+
+      <app-error-message  [field]="form.get('email')" error="required" message="email is mendatory" > </app-error-message>
+      <app-error-message  [field]="form.get('email')" error="email" message="email is invalid" > </app-error-message>
+
+ <!----------------------------->
+
+
+      <ion-item>
+        <ion-label position="floating">mot de passe :</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+
+
+<!--component ----------------->
+
+      <app-error-message  [field]="form.get('password')" error="required" message="password is mendatory" > </app-error-message>
+
+<!--component ----------------->
+
+
+      <ion-button color="dark"fill="clear" size="full" [disabled]="!form.get('email').valid" >mot de passe oublier</ion-button>
+      <ion-button (click)="login()" color="success"size="full" value="block" [disabled]="!form.valid">seconnecter</ion-button>
+      <ion-button (click)="register()"  color="success" size="full" fill="clear">s'inscrire</ion-button>
+      <ion-button (click)="propos()"  color="success" size="full" fill="clear">a propos</ion-button>
+
+
+
+
+    </ion-card-content>
+  </ion-card>
+</form>
+  
+  </div>
+</ion-content>

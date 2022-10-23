@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar color="success" align="center" >
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>inscription</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <ion-card-header>
+    <ion-card-title align="center" color="tet">contact</ion-card-title>
+  </ion-card-header>
+
+<ion-card-content>
+  <ion-item>
+    <ion-label position="floating">nom :</ion-label>
+    <ion-input type="text"> </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Email :</ion-label>
+    <ion-input type="Email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">mot de passe :</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">comfirmer mot de passe  </ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"> num tel </ion-label>
+    <ion-input type="tel"></ion-input>
+  </ion-item>
+
+</ion-card-content>
+ </ion-card>
+ <ion-card>
+   <ion-card-header>
+   <ion-card-title align="center" color="tet">adresse information</ion-card-title>
+     <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">adresse :</ion-label>
+        <ion-input type="adresse"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">numero :</ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">rue :</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">complément :</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">zip-code :</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">ville :</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+   
+     </ion-card-content>
+   </ion-card-header>
+ </ion-card>
+ <ion-button (click)='register()' size="full" color="light">
+  register
+</ion-button>
+
+
+  
+
+</ion-content>
